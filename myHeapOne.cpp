@@ -100,9 +100,6 @@ public:
         z->degree++;
     }
 
-
-    
-
     int Display(Node *H)
     {
         Node *p = H;
