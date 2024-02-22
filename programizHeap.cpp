@@ -215,7 +215,6 @@ int FibonacciHeap::Consolidate(node *H1)
     d = x->degree;
 
     while (A[d] != NULL)
-
     {
       y = A[d];
 
