@@ -74,30 +74,46 @@ public:
         return rootList;
     }
 
-    void linkerChild(Node* rootList,Node* y,Node* z){
-        y->left->right=y->right;
-        y->right->left=y->left;
+    void linkerChild(Node *rootList, Node *y, Node *z)
+    {
+        y->left->right = y->right;
+        y->right->left = y->left;
 
-        if(rootList->right==rootList) rootList=z;
+        if (rootList->right == rootList)
+            rootList = z;
 
-        y->left=y;
-        y->right=y;
-        y->parent=z;
+        y->left = y;
+        y->right = y;
+        y->parent = z;
 
-        if(z->child==nullptr){
-            z->child=y;
+        if (z->child == nullptr)
+        {
+            z->child = y;
         }
 
-        y->right=z->child;
-        y->left=z->child->left;
+        y->right = z->child;
+        y->left = z->child->left;
 
-        z->child->left->right=y;
-        z->child->left=y;
+        z->child->left->right = y;
+        z->child->left = y;
 
-        if(y->key<z->child->key){
-            z->child=y;
+        if (y->key < z->child->key)
+        {
+            z->child = y;
         }
         z->degree++;
+    }
+
+    Node *Union(Node *one, Node *two)
+    {
+        Node *np;
+        Node *H = one;
+        H->left->right = two;
+        two->left->right = H;
+        np = H->left;
+        H->left = two->left;
+        two->left = np;
+        return H;
     }
 
     int Display(Node *H)
@@ -121,6 +137,64 @@ public:
         } while (p != H && p->right != NULL);
         cout << endl;
     }
+
+    Node *extractMin(Node *rootList)
+    {
+        Node *p;
+        Node *ptr;
+
+        Node* z=rootList;
+
+        p=z;
+        ptr=z;
+
+        if(z==nullptr) {
+            return z;
+        }
+
+        Node* x;
+        Node* np;
+
+        x=nullptr;
+
+        if(z->child!=nullptr){
+            x=z->child;
+        }
+
+        if(x!=nullptr){
+            ptr=x;
+
+            do{
+                np=x->right;
+                rootList->left->right=x;
+                x->right=rootList;
+                x->left=rootList->left;
+                rootList->left=x;
+
+                if(x->key<rootList->key){
+                    rootList=x;
+                }
+
+                x->parent=nullptr;
+                x=np;
+            }
+            while(np!=ptr);
+        }
+        z->left->right=z->right;
+        z->right->left=z->left;
+        rootList=z->right;
+
+        if(z==z->right && z->child==nullptr){
+            rootList=nullptr;
+        }
+        else {
+            rootList=z->right;
+            Consolidate(rootList);
+        }
+        nodeNum--;
+        return p;
+
+    }  
 };
 
 int main()
