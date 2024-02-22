@@ -1,0 +1,27 @@
+First Extract Max: 6
+Tree 1: [ Parent: -1 , (4, 30) ]
+Tree 2: [ Parent: -1 , (2, 20) ]->[ Parent: 2 , (1, 15) ] , 
+
+Second Extract Max: 10
+Tree 1: [ Parent: -1 , (9, 50) ]
+Tree 2: [ Parent: -1 , (8, 45) ]->[ Parent: 8 , (7, 40) ] , 
+Tree 3: [ Parent: -1 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  , 
+
+Third Extract Max: 15
+Tree 1: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
+Tree 2: [ Parent: -1 , (11, 60) ]
+Tree 3: [ Parent: -1 , (8, 45) ]->[ Parent: 8 , (7, 40) ] , 
+
+Fourth Extract Max: 18
+Tree 1: [ Parent: -1 , (17, 90) ]->[ Parent: 17 , (11, 60) ] , [ Parent: 17 , (8, 45) ]->[ Parent: 8 , (7, 40) ] ,  , 
+Tree 2: [ Parent: -1 , (16, 85) ]
+Tree 3: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
+
+Fifth Extract Max: 21
+Tree 1: [ Parent: -1 , (20, 105) ]->[ Parent: 20 , (19, 100) ] , 
+Tree 2: [ Parent: -1 , (16, 85) ]
+Tree 3: [ Parent: -1 , (17, 90) ]->[ Parent: 17 , (11, 60) ] , [ Parent: 17 , (8, 45) ]->[ Parent: 8 , (7, 40) ] ,  , 
+Tree 4: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
+
+Max Key: 20
+Found or Not : Not Found

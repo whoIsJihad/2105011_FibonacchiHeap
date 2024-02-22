@@ -108,21 +108,25 @@ public:
     // prints the value of all child of a particular node
     void DisplayChild(Node *rr)
     {
-        Node *p = rr;
+        Node *p = rr->child;
         if (p == nullptr)
             return;
         do
         {
+            cout << "[ ";
+            cout << "Parent: " << (rr == nullptr ? -1 : rr->key)<<" , ";
+            // Fix: Added parentheses around the ternary operator.
             cout << "(" << p->key << ", " << p->value << ")";
+            cout << "]";
             p = p->right;
-            if (p != rr)
+            if (p != rr->child)
             {
                 cout << " , ";
             }
-        } while (p != rr && p->right != nullptr);
+        } while (p != rr->child);
         cout << endl;
     }
-    //prints a single tree as required in the question
+    // prints a single tree as required in the question
 
     void DisplaySingleTree(Node *singleTree)
     {
@@ -134,34 +138,47 @@ public:
         }
 
         Node *ch = p->child;
+
+        cout<<"[ ";
+        cout << "Parent: " << (p->parent == nullptr ? -1 : p->parent->key)<<" , ";
         cout << "(" << p->key << ", " << p->value << ")";
+        cout << " ]";
         if (ch != nullptr)
         {
             cout << "->";
             DisplayChild(ch);
         }
-        //for each child of p call DisplaySingleTree
+        // for each child of p call DisplaySingleTree
 
-        Node * ch1=ch;
-        //do while loop to traverse through all the children of p by ch1 until all child is traversed   
-        do
+        Node *ch1 = ch;
+        // do while loop to traverse through all the children of p by ch1 until all child is traversed
+        if (ch1 != nullptr)
         {
-            DisplaySingleTree(ch1);
-            ch1=ch1->right;
-        } while (ch1 != ch);
+            do
+            {
+                DisplaySingleTree(ch1);
+                cout << " , ";
+                ch1 = ch1->right;
+            } while (ch1 != ch);
+        }
     }
-    //prints the entire heap tree by tree as required in the question
-    void DisplayHeap(){
+    // prints the entire heap tree by tree as required in the question
+    void DisplayHeap()
+    {
         Node *p = rootList;
+        int i = 1;
         if (p == nullptr)
         {
             return;
         }
         do
         {
+            cout << "Tree " << i++ << ": ";
             DisplaySingleTree(p);
+            cout << endl;
             p = p->right;
         } while (p != rootList);
+        cout << endl;
     }
 
     bool Increase_key(int x, int k)
@@ -260,7 +277,7 @@ public:
         return p;
     }
 
-    Node *extractMin()
+    Node *extractMax()
     {
         Node *p, *ptr, *z = rootList;
         p = ptr = z;
@@ -339,7 +356,7 @@ public:
         {
             Node *next = x->right;
             int d = x->degree;
-
+            // if there is a tree in A[d], link it with x and remove it from A[d]
             while (A[d] != nullptr)
             {
                 Node *y = A[d];
@@ -364,6 +381,8 @@ public:
 
         for (int i = 0; i < D; i++)
         {
+            // if there is a tree in A[i],add it to the root list
+
             if (A[i] != nullptr)
             {
                 if (rootList == nullptr)
@@ -377,6 +396,8 @@ public:
                     rootList->left->right = A[i];
                     A[i]->right = rootList;
                     rootList->left = A[i];
+                    // updating the root list if necessary
+
                     if (A[i]->key > rootList->key)
                     {
                         rootList = A[i];
@@ -388,21 +409,72 @@ public:
 
     void Delete(int k)
     {
-        bool done = Increase_key(k, INT_MIN);
+        // calling Increase_key to make the key maximum
+        bool done = Increase_key(k, INT_MAX);
         if (done)
         {
-            Node *np = extractMin();
+            // calling extractMax to remove the maximum key
+            Node *np = extractMax();
         }
         return;
+    }
+
+    int maxKey()
+    {
+        return rootList->key;
+    }
+    //getter for rootlist
+    Node *getRootList()
+    {
+        return rootList;
     }
 };
 
 int main()
 {
-    Node *np = new Node(0, 0);
-    cout << np->key << " " << np->value;
-    cout << endl;
+    FibonacciHeap fh;
+    freopen("output.txt", "w", stdout);
+    Node *extracted = nullptr;
+    fh.insert(1, 15);
+    fh.insert(2, 20);
+    fh.insert(6, 25);
+    fh.insert(4, 30);
+    extracted = fh.extractMax();
+    cout << "First Extract Max: " << extracted->key << "\n";
+    fh.DisplayHeap();
 
-    cout << np << endl;
-    cout << np->left << " " << np->right << endl;
+    fh.insert(5, 35);
+    fh.insert(10, 55);
+    fh.insert(7, 40);
+    fh.insert(8, 45);
+    fh.insert(9, 50);
+    extracted = fh.extractMax();
+    cout << "Second Extract Max: " << extracted->key << "\n";
+    fh.DisplayHeap();
+    fh.insert(12, 65);
+    fh.insert(13, 70);
+    fh.insert(14, 75);
+    fh.insert(11, 60);
+    fh.insert(15, 80);
+    extracted = fh.extractMax();
+    cout << "Third Extract Max: " << extracted->key << "\n";
+    fh.DisplayHeap();
+    fh.insert(17, 90);
+    fh.insert(16, 85);
+    fh.insert(18, 95);
+    extracted = fh.extractMax();
+    cout << "Fourth Extract Max: " << extracted->key << "\n";
+    fh.DisplayHeap();
+    fh.insert(19, 100);
+    fh.insert(20, 105);
+    fh.insert(21, 110);
+
+    extracted = fh.extractMax();
+    cout << "Fifth Extract Max: " << extracted->key << "\n";
+    
+    fh.DisplayHeap();
+    cout<<"Max Key: "<<fh.maxKey()<<endl;
+
+    Node* maximum=fh.Find(fh.getRootList(), 19);
+    cout<<"Found or Not : "<<(maximum==nullptr?"Not Found":"Found")<<endl;   
 }
