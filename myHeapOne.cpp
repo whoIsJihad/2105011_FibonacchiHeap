@@ -35,10 +35,10 @@ public:
 
 class FibonacciHeap
 {
+public:
     int nodeNum;
     Node *rootList;
 
-public:
     FibonacciHeap()
     {
         nodeNum = 0;
@@ -114,7 +114,7 @@ public:
         do
         {
             cout << "[ ";
-            cout << "Parent: " << (rr == nullptr ? -1 : rr->key)<<" , ";
+            cout << "Parent: " << (rr == nullptr ? -1 : rr->key) << " , ";
             // Fix: Added parentheses around the ternary operator.
             cout << "(" << p->key << ", " << p->value << ")";
             cout << "]";
@@ -139,8 +139,8 @@ public:
 
         Node *ch = p->child;
 
-        cout<<"[ ";
-        cout << "Parent: " << (p->parent == nullptr ? -1 : p->parent->key)<<" , ";
+        cout << "[ ";
+        cout << "Parent: " << (p->parent == nullptr ? -1 : p->parent->key) << " , ";
         cout << "(" << p->key << ", " << p->value << ")";
         cout << " ]";
         if (ch != nullptr)
@@ -186,7 +186,7 @@ public:
         if (rootList == nullptr)
             return false;
 
-        Node *ptr = Find(rootList, x);
+        Node *ptr = Find(x);
 
         if (ptr == nullptr || ptr->key > k)
             return false;
@@ -250,33 +250,41 @@ public:
         }
     }
 
-    Node *Find(Node *H, int k)
+    Node *FindHelp(Node *H, int k)
     {
         Node *x = H;
         x->c = 'y';
-        Node *p = nullptr;
-
+        Node *p = NULL;
         if (x->key == k)
         {
             p = x;
             x->c = 'n';
             return p;
         }
-        if (p == nullptr)
+
+        if (p == NULL)
         {
-            if (x->child)
+            if (x->child != nullptr)
             {
-                p = Find(x->child, k);
+                p = FindHelp(x->child, k);
+                if (p != nullptr)
+                    return p;
             }
-            if (x->right->c != 'y')
+            if (x->right != nullptr && (x->right)->c != 'y')
             {
-                p = Find(x->right, k);
+                p = FindHelp(x->right, k);
+                if (p != nullptr)
+                    return p;
             }
         }
+
         x->c = 'n';
         return p;
     }
-
+    Node *Find(int k)
+    {
+        return FindHelp(this->rootList, k);
+    }
     Node *extractMax()
     {
         Node *p, *ptr, *z = rootList;
@@ -423,58 +431,68 @@ public:
     {
         return rootList->key;
     }
-    //getter for rootlist
+    // getter for rootlist
     Node *getRootList()
     {
         return rootList;
     }
+    Node *childListOfMax()
+    {
+        return rootList->child;
+    }
+    int getNodeNum()
+    {
+        return nodeNum;
+    }
 };
 
-int main()
-{
+
+
+int main() {
     FibonacciHeap fh;
+
     freopen("output.txt", "w", stdout);
-    Node *extracted = nullptr;
-    fh.insert(1, 15);
-    fh.insert(2, 20);
-    fh.insert(6, 25);
-    fh.insert(4, 30);
-    extracted = fh.extractMax();
-    cout << "First Extract Max: " << extracted->key << "\n";
-    fh.DisplayHeap();
+    // Generate 20 random numbers and insert them into the Fibonacci Heap
+    srand(time(NULL));
+    for (int i = 0; i < 20; ++i) {
+        int key = rand() % 100; // Generating random numbers between 0 and 99
+        fh.insert(key, i); // Value is set as i for simplicity
+        if ((i + 1) % 5 == 0) {
+            Node *maxNode = fh.extractMax();
+            fh.DisplayHeap();
+            if (maxNode != nullptr) {
+                cout << "Extracted max after " << (i + 1) << " insertions: " << maxNode->key << std::endl;
+                delete maxNode; // Free memory allocated for the extracted node
+            } else {
+                cout << "Fibonacci Heap is empty.\n";
+            }
+        }
+    }
 
-    fh.insert(5, 35);
-    fh.insert(10, 55);
-    fh.insert(7, 40);
-    fh.insert(8, 45);
-    fh.insert(9, 50);
-    extracted = fh.extractMax();
-    cout << "Second Extract Max: " << extracted->key << "\n";
-    fh.DisplayHeap();
-    fh.insert(12, 65);
-    fh.insert(13, 70);
-    fh.insert(14, 75);
-    fh.insert(11, 60);
-    fh.insert(15, 80);
-    extracted = fh.extractMax();
-    cout << "Third Extract Max: " << extracted->key << "\n";
-    fh.DisplayHeap();
-    fh.insert(17, 90);
-    fh.insert(16, 85);
-    fh.insert(18, 95);
-    extracted = fh.extractMax();
-    cout << "Fourth Extract Max: " << extracted->key << "\n";
-    fh.DisplayHeap();
-    fh.insert(19, 100);
-    fh.insert(20, 105);
-    fh.insert(21, 110);
+    // Insert 5 more numbers
+    for (int i = 0; i < 5; ++i) {
+        int key = rand() % 100;
+        fh.insert(key, i);
+    }
 
-    extracted = fh.extractMax();
-    cout << "Fifth Extract Max: " << extracted->key << "\n";
-    
-    fh.DisplayHeap();
-    cout<<"Max Key: "<<fh.maxKey()<<endl;
+    // Call Increase_key for some node
+    int increaseKeyIndex = rand() % 20; // Randomly selecting a node to increase its key
+    int newKey = 150; // New key to increase
+    bool increaseSuccess = fh.Increase_key(increaseKeyIndex, newKey);
+    if (increaseSuccess) {
+        cout << "Key increased successfully.\n";
+    } else {
+        cout << "Failed to increase key.\n";
+    }
 
-    Node* maximum=fh.Find(fh.getRootList(), 19);
-    cout<<"Found or Not : "<<(maximum==nullptr?"Not Found":"Found")<<endl;   
+    // Show the use of the find operation
+    int findKey = 50; // Key to find
+    Node *foundNode = fh.Find(findKey);
+    if (foundNode != nullptr) {
+        cout << "Node found with key " << findKey << " and value " << foundNode->value << endl;
+    } else {
+        cout << "Node with key " << findKey << " not found.\n";
+    }
+
+    return 0;
 }

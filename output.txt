@@ -1,27 +1,21 @@
-First Extract Max: 6
-Tree 1: [ Parent: -1 , (4, 30) ]
-Tree 2: [ Parent: -1 , (2, 20) ]->[ Parent: 2 , (1, 15) ] , 
+Tree 1: [ Parent: -1 , (62, 1) ]->[ Parent: 62 , (44, 2) ] , [ Parent: 62 , (34, 4) ]->[ Parent: 34 , (17, 3) ] ,  , 
 
-Second Extract Max: 10
-Tree 1: [ Parent: -1 , (9, 50) ]
-Tree 2: [ Parent: -1 , (8, 45) ]->[ Parent: 8 , (7, 40) ] , 
-Tree 3: [ Parent: -1 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  , 
+Extracted max after 5 insertions: 91
+Tree 1: [ Parent: -1 , (62, 9) ]->[ Parent: 62 , (44, 2)] , [ Parent: 62 , (34, 4)]
+[ Parent: 62 , (62, 1) ]->[ Parent: 62 , (44, 2) ] , [ Parent: 62 , (34, 4) ]->[ Parent: 34 , (17, 3) ] ,  ,  , [ Parent: 62 , (51, 8) ] , [ Parent: 62 , (46, 7) ]->[ Parent: 46 , (8, 6) ] ,  , 
 
-Third Extract Max: 15
-Tree 1: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
-Tree 2: [ Parent: -1 , (11, 60) ]
-Tree 3: [ Parent: -1 , (8, 45) ]->[ Parent: 8 , (7, 40) ] , 
+Extracted max after 10 insertions: 67
+Tree 1: [ Parent: -1 , (63, 10) ]->[ Parent: 13 , (1, 14)]
+[ Parent: 63 , (13, 13) ]->[ Parent: 13 , (1, 14) ] ,  , [ Parent: 63 , (6, 11) ] , 
+Tree 2: [ Parent: -1 , (62, 9) ]->[ Parent: 62 , (44, 2)] , [ Parent: 62 , (34, 4)]
+[ Parent: 62 , (62, 1) ]->[ Parent: 62 , (44, 2) ] , [ Parent: 62 , (34, 4) ]->[ Parent: 34 , (17, 3) ] ,  ,  , [ Parent: 62 , (51, 8) ] , [ Parent: 62 , (46, 7) ]->[ Parent: 46 , (8, 6) ] ,  , 
 
-Fourth Extract Max: 18
-Tree 1: [ Parent: -1 , (17, 90) ]->[ Parent: 17 , (11, 60) ] , [ Parent: 17 , (8, 45) ]->[ Parent: 8 , (7, 40) ] ,  , 
-Tree 2: [ Parent: -1 , (16, 85) ]
-Tree 3: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
+Extracted max after 15 insertions: 66
+Tree 1: [ Parent: -1 , (69, 19) ]->[ Parent: 63 , (13, 13)] , [ Parent: 63 , (6, 11)]
+[ Parent: 69 , (63, 10) ]->[ Parent: 13 , (1, 14)]
+[ Parent: 63 , (13, 13) ]->[ Parent: 13 , (1, 14) ] ,  , [ Parent: 63 , (6, 11) ] ,  , [ Parent: 69 , (53, 17) ]->[ Parent: 53 , (46, 16) ] ,  , [ Parent: 69 , (22, 18) ] , [ Parent: 69 , (62, 9) ]->[ Parent: 62 , (44, 2)] , [ Parent: 62 , (34, 4)]
+[ Parent: 62 , (62, 1) ]->[ Parent: 62 , (44, 2) ] , [ Parent: 62 , (34, 4) ]->[ Parent: 34 , (17, 3) ] ,  ,  , [ Parent: 62 , (51, 8) ] , [ Parent: 62 , (46, 7) ]->[ Parent: 46 , (8, 6) ] ,  ,  , 
 
-Fifth Extract Max: 21
-Tree 1: [ Parent: -1 , (20, 105) ]->[ Parent: 20 , (19, 100) ] , 
-Tree 2: [ Parent: -1 , (16, 85) ]
-Tree 3: [ Parent: -1 , (17, 90) ]->[ Parent: 17 , (11, 60) ] , [ Parent: 17 , (8, 45) ]->[ Parent: 8 , (7, 40) ] ,  , 
-Tree 4: [ Parent: -1 , (14, 75) ]->[ Parent: 14 , (13, 70) ] , [ Parent: 14 , (12, 65) ]->[ Parent: 12 , (9, 50) ] ,  , [ Parent: 14 , (5, 35) ]->[ Parent: 5 , (4, 30) ] , [ Parent: 5 , (2, 20) ]->[ Parent: 2 , (1, 15) ] ,  ,  , 
-
-Max Key: 20
-Found or Not : Not Found
+Extracted max after 20 insertions: 92
+Key increased successfully.
+Node with key 50 not found.

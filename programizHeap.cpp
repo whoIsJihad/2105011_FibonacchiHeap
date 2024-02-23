@@ -358,7 +358,12 @@ node *FibonacciHeap::Find(node *H, int k)
   if (p == NULL)
   {
     if (x->child != NULL)
+    {
       p = Find(x->child, k);
+      if (p != NULL)
+        return p;
+    }
+
     if ((x->right)->C != 'Y')
       p = Find(x->right, k);
   }
@@ -414,29 +419,34 @@ int main()
   fh.Delete_key(H, m);
 }
 
-void DisplaySingleTree(Node *singleTree) {
-    if (singleTree == nullptr)
-        return;
+void DisplaySingleTree(Node *singleTree)
+{
+  if (singleTree == nullptr)
+    return;
 
-    Node *p = singleTree;
-    cout << "(" << p->key << ", " << p->value << ")";
-    if (p->child != nullptr) {
-        cout << "->";
-        DisplayChild(p->child);
-    }
+  Node *p = singleTree;
+  cout << "(" << p->key << ", " << p->value << ")";
+  if (p->child != nullptr)
+  {
+    cout << "->";
+    DisplayChild(p->child);
+  }
 }
 
-void DisplayHeap() {
-    if (rootList == nullptr) {
-        cout << "Heap is empty!" << endl;
-        return;
-    }
+void DisplayHeap()
+{
+  if (rootList == nullptr)
+  {
+    cout << "Heap is empty!" << endl;
+    return;
+  }
 
-    Node *p = rootList;
-    do {
-        DisplaySingleTree(p);
-        p = p->right;
-        if (p != rootList)
-            cout << endl; // separate trees with newlines
-    } while (p != rootList);
+  Node *p = rootList;
+  do
+  {
+    DisplaySingleTree(p);
+    p = p->right;
+    if (p != rootList)
+      cout << endl; // separate trees with newlines
+  } while (p != rootList);
 }
