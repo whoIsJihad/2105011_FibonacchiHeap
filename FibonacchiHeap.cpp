@@ -147,285 +147,289 @@ public:
             }
         }
     }
-        // prints the entire heap tree by tree as required in the question
-        void DisplayHeap()
+    // prints the entire heap tree by tree as required in the question
+    void DisplayHeap()
+    {
+        Node *p = rootList;
+        int i = 1;
+        if (p == nullptr)
         {
-            Node *p = rootList;
-            int i = 1;
-            if (p == nullptr)
-            {
-                return;
-            }
-            do
-            {
-                cout << "Tree " << i++ << ": ";
-                DisplaySingleTree(p);
-                cout << endl;
-                p = p->right;
-            } while (p != rootList);
+            return;
+        }
+        do
+        {
+            cout << "Tree " << i++ << ": ";
+            DisplaySingleTree(p);
             cout << endl;
+            p = p->right;
+        } while (p != rootList);
+        cout << endl;
+    }
+
+    bool Increase_key(int x, int k)
+    {
+        if (rootList == nullptr)
+            return false;
+
+        Node *ptr = Find(x);
+
+        if (ptr == nullptr || ptr->key > k)
+            return false;
+
+        ptr->key = k;
+
+        Node *y = ptr->parent;
+
+        if (y && y->key < ptr->key)
+        {
+            Cut(ptr, y);
+            Cascade(y);
         }
 
-        bool Increase_key(int x, int k)
+        if (ptr->key > rootList->key)
+            rootList = ptr;
+
+        return true;
+    }
+
+    // cuts the link between x and x's parent (y), and adds x to the root list
+    void Cut(Node *x, Node *y)
+    {
+        if (x == x->right)
         {
-            if (rootList == nullptr)
-                return false;
-
-            Node *ptr = Find(x);
-
-            if (ptr == nullptr || ptr->key > k)
-                return false;
-
-            ptr->key = k;
-
-            Node *y = ptr->parent;
-
-            if (y && y->key < ptr->key)
-            {
-                Cut(ptr, y);
-                Cascade(y);
-            }
-
-            if (ptr->key > rootList->key)
-                rootList = ptr;
-
-            return true;
+            y->child = nullptr;
         }
 
-        // cuts the link between x and x's parent (y), and adds x to the root list
-        void Cut(Node * x, Node * y)
+        (x->left)->right = x->right;
+        (x->right)->left = x->left;
+
+        if (x == y->child)
         {
-            if (x == x->right)
-            {
-                y->child = nullptr;
-            }
-
-            (x->left)->right = x->right;
-            (x->right)->left = x->left;
-
-            if (x == y->child)
-            {
-                y->child = x->right;
-            }
-            y->degree--;
-            x->right = x->left = x;
-
-            rootList->left->right = x;
-            x->right = rootList;
-            x->left = rootList->left;
-            rootList->left = x;
-            x->parent = nullptr;
-            x->marked = false;
+            y->child = x->right;
         }
+        y->degree--;
+        x->right = x->left = x;
 
-        void Cascade(Node * y)
+        rootList->left->right = x;
+        x->right = rootList;
+        x->left = rootList->left;
+        rootList->left = x;
+        x->parent = nullptr;
+        x->marked = false;
+    }
+
+    void Cascade(Node *y)
+    {
+        Node *z = y->parent;
+        if (z)
         {
-            Node *z = y->parent;
-            if (z)
+            if (!y->marked)
             {
-                if (!y->marked)
-                {
-                    y->marked = true;
-                }
-                else
-                {
-                    Cut(y, z);
-                    Cascade(z);
-                }
-            }
-        }
-
-        Node *FindHelp(Node * H, int k)
-        {
-            Node *x = H;
-            x->c = 'y';
-            Node *p = NULL;
-            if (x->key == k)
-            {
-                p = x;
-                x->c = 'n';
-                return p;
-            }
-
-            if (p == NULL)
-            {
-                if (x->child != nullptr)
-                {
-                    p = FindHelp(x->child, k);
-                    if (p != nullptr)
-                        return p;
-                }
-                if (x->right != nullptr && (x->right)->c != 'y')
-                {
-                    p = FindHelp(x->right, k);
-                    if (p != nullptr)
-                        return p;
-                }
-            }
-
-            x->c = 'n';
-            return p;
-        }
-        Node *Find(int k)
-        {
-            return FindHelp(this->rootList, k);
-        }
-        Node *extractMax()
-        {
-            Node *p, *ptr, *z = rootList;
-            p = ptr = z;
-
-            if (z == nullptr)
-            {
-                return z;
-            }
-
-            Node *x;
-            Node *np;
-
-            x = nullptr;
-
-            if (z->child != nullptr)
-            {
-                x = z->child;
-            }
-
-            if (x != nullptr)
-            {
-                // setting ptr equals to child of z
-                ptr = x;
-
-                // adding all child of z to rootlist
-                do
-                {
-                    np = x->right;
-                    rootList->left->right = x;
-                    x->right = rootList;
-                    x->left = rootList->left;
-                    rootList->left = x;
-                    // updating the key if necessary
-                    if (x->key > rootList->key)
-                    {
-                        rootList = x;
-                    }
-
-                    x->parent = nullptr;
-                    // updating x
-                    x = np;
-                } while (np != ptr);
-            }
-
-            z->left->right = z->right;
-            z->right->left = z->left;
-            rootList = z->right;
-
-            if (z == z->right && z->child == nullptr)
-            {
-                rootList = nullptr;
+                y->marked = true;
             }
             else
             {
-                rootList = z->right;
-                Consolidate();
+                Cut(y, z);
+                Cascade(z);
             }
-            nodeNum--;
+        }
+    }
+
+    Node *FindHelp(Node *H, int k)
+    {
+        Node *x = H;
+        x->c = 'y';
+        Node *p = NULL;
+        if (x->key == k)
+        {
+            p = x;
+            x->c = 'n';
             return p;
         }
 
-        void Consolidate()
+        if (p == NULL)
         {
-            int D = log2(nodeNum) + 1;
-            Node *A[D];
-
-            for (int i = 0; i < D; i++)
+            if (x->child != nullptr)
             {
-                A[i] = nullptr;
+                p = FindHelp(x->child, k);
+                if (p != nullptr)
+                    return p;
             }
+            if (x->right != nullptr && (x->right)->c != 'y')
+            {
+                p = FindHelp(x->right, k);
+                if (p != nullptr)
+                    return p;
+            }
+        }
 
-            Node *x = rootList;
-            Node *start = rootList;
+        x->c = 'n';
+        return p;
+    }
+    Node *Find(int k)
+    {
+        return FindHelp(this->rootList, k);
+    }
+    Node *extractMax()
+    {
+        Node *p, *ptr, *z = rootList;
+        p = ptr = z;
 
+        if (z == nullptr)
+        {
+            return z;
+        }
+
+        Node *x;
+        Node *np;
+
+        x = nullptr;
+
+        if (z->child != nullptr)
+        {
+            x = z->child;
+        }
+
+        if (x != nullptr)
+        {
+            // setting ptr equals to child of z
+            ptr = x;
+
+            // adding all child of z to rootlist
             do
             {
-                Node *next = x->right;
-                int d = x->degree;
-                // if there is a tree in A[d], link it with x and remove it from A[d]
-                while (A[d] != nullptr)
+                np = x->right;
+                rootList->left->right = x;
+                x->right = rootList;
+                x->left = rootList->left;
+                rootList->left = x;
+                // updating the key if necessary
+                if (x->key > rootList->key)
                 {
-                    Node *y = A[d];
-
-                    if (x->key < y->key)
-                    {
-                        swap(x, y);
-                    }
-
-                    linkerChild(y, x);
-
-                    A[d] = nullptr;
-                    d++;
+                    rootList = x;
                 }
 
-                A[d] = x;
-                x = next;
+                x->parent = nullptr;
+                // updating x
+                x = np;
+            } while (np != ptr);
+        }
 
-            } while (x != start);
+        z->left->right = z->right;
+        z->right->left = z->left;
+        rootList = z->right;
 
+        if (z == z->right && z->child == nullptr)
+        {
             rootList = nullptr;
+        }
+        else
+        {
+            rootList = z->right;
+            Consolidate();
+        }
+        nodeNum--;
+        return p;
+    }
 
-            for (int i = 0; i < D; i++)
+    void Consolidate()
+    {
+
+        double golden_ratio = (1 + sqrt(5)) / 2; // Calculate the golden ratio
+
+        int D = log(nodeNum) / log(golden_ratio) + 1; // Use the golden ratio as the base
+
+        Node *A[D];
+
+        for (int i = 0; i < D; i++)
+        {
+            A[i] = nullptr;
+        }
+
+        Node *x = rootList;
+        Node *start = rootList;
+
+        do
+        {
+            Node *next = x->right;
+            int d = x->degree;
+            // if there is a tree in A[d], link it with x and remove it from A[d]
+            while (A[d] != nullptr)
             {
-                // if there is a tree in A[i],add it to the root list
+                Node *y = A[d];
 
-                if (A[i] != nullptr)
+                if (x->key < y->key)
                 {
-                    if (rootList == nullptr)
+                    swap(x, y);
+                }
+
+                linkerChild(y, x);
+
+                A[d] = nullptr;
+                d++;
+            }
+
+            A[d] = x;
+            x = next;
+
+        } while (x != start);
+
+        rootList = nullptr;
+
+        for (int i = 0; i < D; i++)
+        {
+            // if there is a tree in A[i],add it to the root list
+
+            if (A[i] != nullptr)
+            {
+                if (rootList == nullptr)
+                {
+                    rootList = A[i];
+                    rootList->left = rootList->right = rootList;
+                }
+                else
+                {
+                    A[i]->left = rootList->left;
+                    rootList->left->right = A[i];
+                    rootList->left = A[i];
+                    // updating the root list if necessary
+
+                    if (A[i]->key > rootList->key)
                     {
                         rootList = A[i];
-                        rootList->left = rootList->right = rootList;
-                    }
-                    else
-                    {
-                        A[i]->left = rootList->left;
-                        rootList->left->right = A[i];
-                        rootList->left = A[i];
-                        // updating the root list if necessary
-
-                        if (A[i]->key > rootList->key)
-                        {
-                            rootList = A[i];
-                        }
                     }
                 }
             }
         }
+    }
 
-        void Delete(int k)
+    void Delete(int k)
+    {
+        // calling Increase_key to make the key maximum
+        bool done = Increase_key(k, INT_MAX);
+        if (done)
         {
-            // calling Increase_key to make the key maximum
-            bool done = Increase_key(k, INT_MAX);
-            if (done)
-            {
-                // calling extractMax to remove the maximum key
-                Node *np = extractMax();
-            }
-            return;
+            // calling extractMax to remove the maximum key
+            Node *np = extractMax();
         }
+        return;
+    }
 
-        int maxKey()
-        {
-            return rootList->key;
-        }
-        // getter for rootlist
-        Node *getRootList()
-        {
-            return rootList;
-        }
-        Node *childListOfMax()
-        {
-            return rootList->child;
-        }
-        int getNodeNum()
-        {
-            return nodeNum;
-        }
-    };
+    int maxKey()
+    {
+        return rootList->key;
+    }
+    // getter for rootlist
+    Node *getRootList()
+    {
+        return rootList;
+    }
+    Node *childListOfMax()
+    {
+        return rootList->child;
+    }
+    int getNodeNum()
+    {
+        return nodeNum;
+    }
+};

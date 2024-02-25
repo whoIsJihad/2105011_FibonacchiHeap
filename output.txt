@@ -1,720 +1,102 @@
 Empty
-Inserting: 2662
-Inserting: 279
-Inserting: 2441
-Inserting: 1082
-Inserting: 1287
-Inserting: 1773
-Inserting: 884
-Inserting: 2808
-Inserting: 2717
-Inserting: 1390
-Inserting: 305
-Inserting: 2002
-Inserting: 163
-Inserting: 1034
-Inserting: 2753
-Inserting: 736
-Inserting: 2731
-Inserting: 1425
-Inserting: 2645
-Inserting: 212
-Inserting: 2632
-Inserting: 1628
-Inserting: 571
-Inserting: 162
-Inserting: 2817
-Inserting: 2783
-Inserting: 1086
-Inserting: 1457
-Inserting: 1597
-Inserting: 1709
-Inserting: 1279
-Inserting: 1267
-Inserting: 813
-Inserting: 1716
-Inserting: 2091
-Inserting: 1086
-Inserting: 2313
-Inserting: 300
-Inserting: 184
-Inserting: 860
-Inserting: 321
-Inserting: 2141
-Inserting: 125
-Inserting: 877
-Inserting: 1101
-Inserting: 2998
-Inserting: 555
-Inserting: 642
-Inserting: 2305
-Inserting: 1459
-Inserting: 2799
-Inserting: 185
-Inserting: 55
-Inserting: 689
-Inserting: 1557
-Inserting: 1134
-Inserting: 1137
-Inserting: 1157
-Inserting: 1925
-Inserting: 990
-Inserting: 745
-Inserting: 2024
-Inserting: 734
-Inserting: 504
-Inserting: 2075
-Inserting: 1178
-Inserting: 2540
-Inserting: 1821
-Inserting: 491
-Inserting: 2916
-Inserting: 2716
-Inserting: 1156
-Inserting: 203
-Inserting: 2185
-Inserting: 1187
-Inserting: 912
-Inserting: 1064
-Inserting: 2126
-Inserting: 1157
-Inserting: 442
-Inserting: 1349
-Inserting: 2056
-Inserting: 1497
+Inserting: 2473
+Inserting: 2329
+Inserting: 722
+Inserting: 75
+Inserting: 604
+Inserting: 2073
+Inserting: 692
+Inserting: 1484
+Inserting: 1107
+Inserting: 2797
+Inserting: 2506
+Inserting: 2259
+Inserting: 1862
+Inserting: 1172
+Inserting: 1814
+Inserting: 2772
+Inserting: 1618
+Inserting: 421
+Inserting: 1858
 Inserting: 357
-Inserting: 2619
-Inserting: 1985
-Inserting: 1766
-Inserting: 816
-Inserting: 2918
-Inserting: 1800
-Inserting: 1021
-Inserting: 1367
-Inserting: 178
-Inserting: 1088
-Inserting: 1027
-Inserting: 2316
-Inserting: 40
-Inserting: 2057
-Inserting: 153
-Inserting: 319
-Inserting: 900
-Extracted Max: 2998
-Tree 1: [Parent: -1 , (2918,157)]->[Parent: 2918 , (2916,967)][Parent: 2918 , (2619,467)][Parent: 2918 , (1985,578)][Parent: 2918 , (816,28)][Parent: 2918 , (2316,489)]
-[Parent: 2918 , (2916,967)]->[Parent: 2916 , (2716,386)][Parent: 2916 , (1156,819)][Parent: 2916 , (2540,986)][Parent: 2916 , (2185,35)]
-[Parent: 2916 , (1156,819)]->[Parent: 1156 , (203,332)]
-[Parent: 2916 , (2540,986)]->[Parent: 2540 , (1821,896)][Parent: 2540 , (1178,794)]
-[Parent: 2540 , (1821,896)]->[Parent: 1821 , (491,468)]
-[Parent: 2916 , (2185,35)]->[Parent: 2185 , (2126,66)][Parent: 2185 , (1187,488)][Parent: 2185 , (1064,582)]
-[Parent: 2185 , (2126,66)]->[Parent: 2126 , (1349,840)][Parent: 2126 , (1157,175)]
-[Parent: 2126 , (1349,840)]->[Parent: 1349 , (442,192)]
-[Parent: 2185 , (1064,582)]->[Parent: 1064 , (912,58)]
-[Parent: 2918 , (2619,467)]->[Parent: 2619 , (2056,476)][Parent: 2619 , (357,463)]
-[Parent: 2619 , (2056,476)]->[Parent: 2056 , (1497,817)]
-[Parent: 2918 , (1985,578)]->[Parent: 1985 , (1766,680)]
-[Parent: 2918 , (2316,489)]->[Parent: 2316 , (1800,620)][Parent: 2316 , (1088,598)][Parent: 2316 , (40,797)]
-[Parent: 2316 , (1800,620)]->[Parent: 1800 , (1367,72)][Parent: 1800 , (1021,526)]
-[Parent: 1800 , (1367,72)]->[Parent: 1367 , (178,385)]
-[Parent: 2316 , (1088,598)]->[Parent: 1088 , (1027,534)]
-
-Tree 2: [Parent: -1 , (2057,639)]->[Parent: 2057 , (900,315)][Parent: 2057 , (153,160)]
-[Parent: 2057 , (900,315)]->[Parent: 900 , (319,112)]
-
-Tree 3: [Parent: -1 , (2817,487)]->[Parent: 2817 , (2808,442)][Parent: 2817 , (2662,588)][Parent: 2817 , (2441,560)][Parent: 2817 , (2753,107)][Parent: 2817 , (2783,667)][Parent: 2817 , (2799,595)]
-[Parent: 2817 , (2662,588)]->[Parent: 2662 , (279,872)]
-[Parent: 2817 , (2441,560)]->[Parent: 2441 , (1773,202)][Parent: 2441 , (1082,387)]
-[Parent: 2441 , (1773,202)]->[Parent: 1773 , (1287,677)]
-[Parent: 2817 , (2753,107)]->[Parent: 2753 , (2717,524)][Parent: 2753 , (2002,146)][Parent: 2753 , (1034,434)]
-[Parent: 2753 , (2717,524)]->[Parent: 2717 , (1390,241)][Parent: 2717 , (884,183)]
-[Parent: 2717 , (1390,241)]->[Parent: 1390 , (305,425)]
-[Parent: 2753 , (2002,146)]->[Parent: 2002 , (163,833)]
-[Parent: 2817 , (2783,667)]->[Parent: 2783 , (2731,900)][Parent: 2783 , (1709,918)][Parent: 2783 , (1457,950)][Parent: 2783 , (162,895)]
-[Parent: 2783 , (2731,900)]->[Parent: 2731 , (2645,942)][Parent: 2731 , (736,705)][Parent: 2731 , (2632,719)]
-[Parent: 2731 , (2645,942)]->[Parent: 2645 , (1425,986)]
-[Parent: 2731 , (2632,719)]->[Parent: 2632 , (1628,725)][Parent: 2632 , (212,470)]
-[Parent: 2632 , (1628,725)]->[Parent: 1628 , (571,108)]
-[Parent: 2783 , (1709,918)]->[Parent: 1709 , (1597,751)][Parent: 1709 , (1279,313)]
-[Parent: 1709 , (1279,313)]->[Parent: 1279 , (1267,191)]
-[Parent: 2783 , (1457,950)]->[Parent: 1457 , (1086,310)]
-[Parent: 2817 , (2799,595)]->[Parent: 2799 , (2313,290)][Parent: 2799 , (2075,706)][Parent: 2799 , (1557,301)][Parent: 2799 , (1459,491)][Parent: 2799 , (185,221)]
-[Parent: 2799 , (2313,290)]->[Parent: 2313 , (2305,827)][Parent: 2313 , (2091,652)][Parent: 2313 , (860,81)][Parent: 2313 , (300,261)]
-[Parent: 2313 , (2305,827)]->[Parent: 2305 , (2141,195)][Parent: 2305 , (1101,41)][Parent: 2305 , (642,622)]
-[Parent: 2305 , (2141,195)]->[Parent: 2141 , (877,488)][Parent: 2141 , (321,789)]
-[Parent: 2141 , (877,488)]->[Parent: 877 , (125,408)]
-[Parent: 2305 , (1101,41)]->[Parent: 1101 , (555,941)]
-[Parent: 2313 , (2091,652)]->[Parent: 2091 , (1716,510)][Parent: 2091 , (1086,908)]
-[Parent: 2091 , (1716,510)]->[Parent: 1716 , (813,564)]
-[Parent: 2313 , (860,81)]->[Parent: 860 , (184,436)]
-[Parent: 2799 , (2075,706)]->[Parent: 2075 , (2024,727)][Parent: 2075 , (504,359)][Parent: 2075 , (1925,510)]
-[Parent: 2075 , (2024,727)]->[Parent: 2024 , (734,399)]
-[Parent: 2075 , (1925,510)]->[Parent: 1925 , (1157,48)][Parent: 1925 , (990,650)]
-[Parent: 1925 , (990,650)]->[Parent: 990 , (745,9)]
-[Parent: 2799 , (1557,301)]->[Parent: 1557 , (1137,679)][Parent: 1557 , (689,776)]
-[Parent: 1557 , (1137,679)]->[Parent: 1137 , (1134,608)]
-[Parent: 2799 , (185,221)]->[Parent: 185 , (55,846)]
-
-
-Inserting: 1456
-Inserting: 1560
-Inserting: 946
-Inserting: 270
-Inserting: 2574
-Inserting: 1617
-Inserting: 2572
-Inserting: 229
-Inserting: 130
-Inserting: 1733
-Inserting: 819
-Inserting: 1643
-Inserting: 2362
-Inserting: 960
-Inserting: 2288
-Inserting: 2379
-Inserting: 2769
-Inserting: 2249
-Inserting: 1651
-Inserting: 2263
-Inserting: 1960
-Inserting: 1914
-Inserting: 2470
-Inserting: 1825
-Inserting: 250
-Inserting: 1748
-Inserting: 1246
-Inserting: 2124
-Inserting: 2256
-Inserting: 9
-Inserting: 2894
-Inserting: 567
-Inserting: 923
-Inserting: 180
-Inserting: 1645
-Inserting: 2596
-Inserting: 2968
-Inserting: 930
-Inserting: 1935
-Inserting: 2938
-Inserting: 330
-Inserting: 1290
-Inserting: 1727
-Inserting: 804
-Inserting: 581
-Inserting: 1800
-Inserting: 376
-Inserting: 1776
-Inserting: 1018
-Inserting: 109
-Inserting: 1249
-Inserting: 1105
-Inserting: 493
-Inserting: 2873
-Inserting: 12
-Inserting: 226
-Inserting: 1804
-Inserting: 656
-Inserting: 2221
-Inserting: 1696
-Inserting: 2172
-Inserting: 1473
-Inserting: 579
-Inserting: 1347
-Inserting: 1930
-Inserting: 431
-Inserting: 280
-Inserting: 2090
-Inserting: 1421
-Inserting: 31
-Inserting: 128
-Inserting: 2927
-Inserting: 1214
-Inserting: 2336
-Inserting: 1514
-Inserting: 614
-Inserting: 1196
-Inserting: 20
-Inserting: 2401
-Inserting: 1642
-Inserting: 2757
-Inserting: 2173
-Inserting: 2276
-Inserting: 1880
-Inserting: 865
-Inserting: 1660
-Inserting: 2208
-Inserting: 529
-Inserting: 655
-Inserting: 2898
-Inserting: 2782
-Inserting: 396
-Inserting: 369
-Inserting: 406
-Inserting: 350
-Inserting: 490
-Inserting: 258
-Inserting: 1
-Inserting: 1490
-Inserting: 1046
-Extracted Max: 2968
-Tree 1: [Parent: -1 , (2938,312)]->[Parent: 2938 , (2927,357)][Parent: 2938 , (2894,91)][Parent: 2938 , (1935,774)][Parent: 2938 , (330,560)][Parent: 2938 , (1727,300)][Parent: 2938 , (2873,715)]
-[Parent: 2938 , (2927,357)]->[Parent: 2927 , (2898,43)][Parent: 2927 , (2336,158)][Parent: 2927 , (1214,70)][Parent: 2927 , (128,409)][Parent: 2927 , (2090,433)]
-[Parent: 2927 , (2898,43)]->[Parent: 2898 , (2782,29)][Parent: 2898 , (396,773)][Parent: 2898 , (2208,736)][Parent: 2898 , (2757,259)]
-[Parent: 2898 , (396,773)]->[Parent: 396 , (369,350)]
-[Parent: 2898 , (2208,736)]->[Parent: 2208 , (1660,119)][Parent: 2208 , (655,305)]
-[Parent: 2208 , (655,305)]->[Parent: 655 , (529,736)]
-[Parent: 2898 , (2757,259)]->[Parent: 2757 , (2401,696)][Parent: 2757 , (1642,615)][Parent: 2757 , (2276,651)]
-[Parent: 2757 , (2401,696)]->[Parent: 2401 , (20,347)]
-[Parent: 2757 , (2276,651)]->[Parent: 2276 , (2173,993)][Parent: 2276 , (1880,957)]
-[Parent: 2276 , (1880,957)]->[Parent: 1880 , (865,101)]
-[Parent: 2927 , (2336,158)]->[Parent: 2336 , (1514,38)][Parent: 2336 , (1196,657)]
-[Parent: 2336 , (1196,657)]->[Parent: 1196 , (614,708)]
-[Parent: 2927 , (128,409)]->[Parent: 128 , (31,87)]
-[Parent: 2927 , (2090,433)]->[Parent: 2090 , (1930,801)][Parent: 2090 , (1421,201)][Parent: 2090 , (431,652)]
-[Parent: 2090 , (1930,801)]->[Parent: 1930 , (1473,498)][Parent: 1930 , (1347,657)]
-[Parent: 1930 , (1473,498)]->[Parent: 1473 , (579,825)]
-[Parent: 2090 , (431,652)]->[Parent: 431 , (280,830)]
-[Parent: 2938 , (2894,91)]->[Parent: 2894 , (2596,618)][Parent: 2894 , (2256,802)][Parent: 2894 , (567,87)]
-[Parent: 2894 , (2596,618)]->[Parent: 2596 , (1645,690)][Parent: 2596 , (923,545)]
-[Parent: 2596 , (923,545)]->[Parent: 923 , (180,426)]
-[Parent: 2894 , (2256,802)]->[Parent: 2256 , (9,696)]
-[Parent: 2938 , (1935,774)]->[Parent: 1935 , (930,787)]
-[Parent: 2938 , (1727,300)]->[Parent: 1727 , (1290,888)][Parent: 1727 , (804,264)]
-[Parent: 1727 , (804,264)]->[Parent: 804 , (581,146)]
-[Parent: 2938 , (2873,715)]->[Parent: 2873 , (2221,801)][Parent: 2873 , (1804,675)][Parent: 2873 , (12,448)][Parent: 2873 , (1800,57)]
-[Parent: 2873 , (2221,801)]->[Parent: 2221 , (2172,197)][Parent: 2221 , (656,152)]
-[Parent: 2221 , (2172,197)]->[Parent: 2172 , (1696,506)]
-[Parent: 2873 , (1804,675)]->[Parent: 1804 , (226,280)]
-[Parent: 2873 , (1800,57)]->[Parent: 1800 , (1776,595)][Parent: 1800 , (376,860)][Parent: 1800 , (1249,854)]
-[Parent: 1800 , (1776,595)]->[Parent: 1776 , (1018,51)]
-[Parent: 1800 , (1249,854)]->[Parent: 1249 , (1105,568)][Parent: 1249 , (109,650)]
-[Parent: 1249 , (1105,568)]->[Parent: 1105 , (493,291)]
-
-Tree 2: [Parent: -1 , (1490,853)]->[Parent: 1490 , (1,543)]
-
-Tree 3: [Parent: -1 , (1046,741)]
-Tree 4: [Parent: -1 , (490,47)]->[Parent: 490 , (406,780)][Parent: 490 , (258,9)]
-[Parent: 490 , (406,780)]->[Parent: 406 , (350,386)]
-
-Tree 5: [Parent: -1 , (2918,157)]->[Parent: 2918 , (2916,967)][Parent: 2918 , (2619,467)][Parent: 2918 , (1985,578)][Parent: 2918 , (816,28)][Parent: 2918 , (2316,489)][Parent: 2918 , (2769,171)][Parent: 2918 , (2817,487)]
-[Parent: 2918 , (2916,967)]->[Parent: 2916 , (2716,386)][Parent: 2916 , (1156,819)][Parent: 2916 , (2540,986)][Parent: 2916 , (2185,35)]
-[Parent: 2916 , (1156,819)]->[Parent: 1156 , (203,332)]
-[Parent: 2916 , (2540,986)]->[Parent: 2540 , (1821,896)][Parent: 2540 , (1178,794)]
-[Parent: 2540 , (1821,896)]->[Parent: 1821 , (491,468)]
-[Parent: 2916 , (2185,35)]->[Parent: 2185 , (2126,66)][Parent: 2185 , (1187,488)][Parent: 2185 , (1064,582)]
-[Parent: 2185 , (2126,66)]->[Parent: 2126 , (1349,840)][Parent: 2126 , (1157,175)]
-[Parent: 2126 , (1349,840)]->[Parent: 1349 , (442,192)]
-[Parent: 2185 , (1064,582)]->[Parent: 1064 , (912,58)]
-[Parent: 2918 , (2619,467)]->[Parent: 2619 , (2056,476)][Parent: 2619 , (357,463)]
-[Parent: 2619 , (2056,476)]->[Parent: 2056 , (1497,817)]
-[Parent: 2918 , (1985,578)]->[Parent: 1985 , (1766,680)]
-[Parent: 2918 , (2316,489)]->[Parent: 2316 , (1800,620)][Parent: 2316 , (1088,598)][Parent: 2316 , (40,797)]
-[Parent: 2316 , (1800,620)]->[Parent: 1800 , (1367,72)][Parent: 1800 , (1021,526)]
-[Parent: 1800 , (1367,72)]->[Parent: 1367 , (178,385)]
-[Parent: 2316 , (1088,598)]->[Parent: 1088 , (1027,534)]
-[Parent: 2918 , (2769,171)]->[Parent: 2769 , (2574,387)][Parent: 2769 , (2470,347)][Parent: 2769 , (2379,412)][Parent: 2769 , (2263,608)][Parent: 2769 , (2249,197)]
-[Parent: 2769 , (2574,387)]->[Parent: 2574 , (2572,558)][Parent: 2574 , (1617,49)][Parent: 2574 , (1733,51)][Parent: 2574 , (2057,639)]
-[Parent: 2574 , (2572,558)]->[Parent: 2572 , (229,505)]
-[Parent: 2574 , (1733,51)]->[Parent: 1733 , (1643,609)][Parent: 1733 , (130,514)]
-[Parent: 1733 , (1643,609)]->[Parent: 1643 , (819,820)]
-[Parent: 2574 , (2057,639)]->[Parent: 2057 , (1560,257)][Parent: 2057 , (900,315)][Parent: 2057 , (153,160)]
-[Parent: 2057 , (1560,257)]->[Parent: 1560 , (1456,473)][Parent: 1560 , (946,817)]
-[Parent: 1560 , (946,817)]->[Parent: 946 , (270,417)]
-[Parent: 2057 , (900,315)]->[Parent: 900 , (319,112)]
-[Parent: 2769 , (2470,347)]->[Parent: 2470 , (2124,469)][Parent: 2470 , (1960,736)][Parent: 2470 , (1825,422)]
-[Parent: 2470 , (2124,469)]->[Parent: 2124 , (1748,614)][Parent: 2124 , (1246,487)]
-[Parent: 2124 , (1748,614)]->[Parent: 1748 , (250,357)]
-[Parent: 2470 , (1960,736)]->[Parent: 1960 , (1914,864)]
-[Parent: 2769 , (2379,412)]->[Parent: 2379 , (2362,43)][Parent: 2379 , (2288,76)]
-[Parent: 2379 , (2362,43)]->[Parent: 2362 , (960,400)]
-[Parent: 2769 , (2263,608)]->[Parent: 2263 , (1651,275)]
-[Parent: 2918 , (2817,487)]->[Parent: 2817 , (2808,442)][Parent: 2817 , (2662,588)][Parent: 2817 , (2441,560)][Parent: 2817 , (2753,107)][Parent: 2817 , (2783,667)][Parent: 2817 , (2799,595)]
-[Parent: 2817 , (2662,588)]->[Parent: 2662 , (279,872)]
-[Parent: 2817 , (2441,560)]->[Parent: 2441 , (1773,202)][Parent: 2441 , (1082,387)]
-[Parent: 2441 , (1773,202)]->[Parent: 1773 , (1287,677)]
-[Parent: 2817 , (2753,107)]->[Parent: 2753 , (2717,524)][Parent: 2753 , (2002,146)][Parent: 2753 , (1034,434)]
-[Parent: 2753 , (2717,524)]->[Parent: 2717 , (1390,241)][Parent: 2717 , (884,183)]
-[Parent: 2717 , (1390,241)]->[Parent: 1390 , (305,425)]
-[Parent: 2753 , (2002,146)]->[Parent: 2002 , (163,833)]
-[Parent: 2817 , (2783,667)]->[Parent: 2783 , (2731,900)][Parent: 2783 , (1709,918)][Parent: 2783 , (1457,950)][Parent: 2783 , (162,895)]
-[Parent: 2783 , (2731,900)]->[Parent: 2731 , (2645,942)][Parent: 2731 , (736,705)][Parent: 2731 , (2632,719)]
-[Parent: 2731 , (2645,942)]->[Parent: 2645 , (1425,986)]
-[Parent: 2731 , (2632,719)]->[Parent: 2632 , (1628,725)][Parent: 2632 , (212,470)]
-[Parent: 2632 , (1628,725)]->[Parent: 1628 , (571,108)]
-[Parent: 2783 , (1709,918)]->[Parent: 1709 , (1597,751)][Parent: 1709 , (1279,313)]
-[Parent: 1709 , (1279,313)]->[Parent: 1279 , (1267,191)]
-[Parent: 2783 , (1457,950)]->[Parent: 1457 , (1086,310)]
-[Parent: 2817 , (2799,595)]->[Parent: 2799 , (2313,290)][Parent: 2799 , (2075,706)][Parent: 2799 , (1557,301)][Parent: 2799 , (1459,491)][Parent: 2799 , (185,221)]
-[Parent: 2799 , (2313,290)]->[Parent: 2313 , (2305,827)][Parent: 2313 , (2091,652)][Parent: 2313 , (860,81)][Parent: 2313 , (300,261)]
-[Parent: 2313 , (2305,827)]->[Parent: 2305 , (2141,195)][Parent: 2305 , (1101,41)][Parent: 2305 , (642,622)]
-[Parent: 2305 , (2141,195)]->[Parent: 2141 , (877,488)][Parent: 2141 , (321,789)]
-[Parent: 2141 , (877,488)]->[Parent: 877 , (125,408)]
-[Parent: 2305 , (1101,41)]->[Parent: 1101 , (555,941)]
-[Parent: 2313 , (2091,652)]->[Parent: 2091 , (1716,510)][Parent: 2091 , (1086,908)]
-[Parent: 2091 , (1716,510)]->[Parent: 1716 , (813,564)]
-[Parent: 2313 , (860,81)]->[Parent: 860 , (184,436)]
-[Parent: 2799 , (2075,706)]->[Parent: 2075 , (2024,727)][Parent: 2075 , (504,359)][Parent: 2075 , (1925,510)]
-[Parent: 2075 , (2024,727)]->[Parent: 2024 , (734,399)]
-[Parent: 2075 , (1925,510)]->[Parent: 1925 , (1157,48)][Parent: 1925 , (990,650)]
-[Parent: 1925 , (990,650)]->[Parent: 990 , (745,9)]
-[Parent: 2799 , (1557,301)]->[Parent: 1557 , (1137,679)][Parent: 1557 , (689,776)]
-[Parent: 1557 , (1137,679)]->[Parent: 1137 , (1134,608)]
-[Parent: 2799 , (185,221)]->[Parent: 185 , (55,846)]
-
-
-Inserting: 593
-Inserting: 1875
-Inserting: 1783
-Inserting: 1540
-Inserting: 106
-Inserting: 1101
-Inserting: 2693
-Inserting: 1685
-Inserting: 2630
-Inserting: 2673
-Inserting: 2538
-Inserting: 1859
-Inserting: 188
-Inserting: 2546
-Inserting: 2341
-Inserting: 743
-Inserting: 2154
-Inserting: 2983
-Inserting: 1994
-Inserting: 275
-Inserting: 2319
-Inserting: 897
-Inserting: 1859
-Inserting: 370
-Inserting: 2579
-Inserting: 2835
-Inserting: 1355
-Inserting: 2409
-Inserting: 2741
-Inserting: 745
-Inserting: 2300
+Inserting: 1670
+Inserting: 2993
+Inserting: 2561
+Inserting: 2098
+Inserting: 2246
+Inserting: 2061
+Inserting: 2770
+Inserting: 1258
+Inserting: 2274
+Inserting: 1614
+Inserting: 536
 Inserting: 149
-Inserting: 1536
-Inserting: 1148
-Inserting: 2031
-Inserting: 1511
-Inserting: 1713
-Inserting: 315
-Inserting: 609
-Inserting: 2581
-Inserting: 812
-Inserting: 2762
-Inserting: 2571
-Inserting: 2819
-Inserting: 2115
-Inserting: 2500
-Inserting: 889
-Inserting: 131
-Inserting: 1165
-Inserting: 1164
-Inserting: 2251
-Inserting: 1832
-Inserting: 1702
-Inserting: 2577
-Inserting: 2992
-Inserting: 37
-Inserting: 1367
-Inserting: 737
-Inserting: 2013
-Inserting: 1574
-Inserting: 2383
-Inserting: 352
-Inserting: 1571
-Inserting: 1916
-Inserting: 911
-Inserting: 804
-Inserting: 2504
-Inserting: 1404
-Inserting: 140
-Inserting: 1762
-Inserting: 776
-Inserting: 916
-Inserting: 2500
-Inserting: 899
-Inserting: 115
-Inserting: 1404
-Inserting: 959
-Inserting: 1474
-Inserting: 1528
-Inserting: 2198
-Inserting: 418
-Inserting: 912
-Inserting: 1249
-Inserting: 2300
-Inserting: 1098
-Inserting: 141
-Inserting: 2111
-Inserting: 2205
-Inserting: 2908
-Inserting: 580
-Inserting: 1915
-Inserting: 2841
-Inserting: 2576
-Inserting: 676
-Inserting: 2328
-Inserting: 1033
-Inserting: 2991
-Inserting: 1528
-Inserting: 1331
-Inserting: 1177
-Extracted Max: 2992
-Tree 1: [Parent: -1 , (2991,659)]->[Parent: 2991 , (2841,179)][Parent: 2991 , (2328,119)][Parent: 2991 , (1528,98)]
-[Parent: 2991 , (2841,179)]->[Parent: 2841 , (2576,170)][Parent: 2841 , (1915,514)]
-[Parent: 2841 , (2576,170)]->[Parent: 2576 , (676,745)]
-[Parent: 2991 , (2328,119)]->[Parent: 2328 , (1033,984)]
-
-Tree 2: [Parent: -1 , (1331,349)]->[Parent: 1331 , (1177,741)]
-
-Tree 3: [Parent: -1 , (2908,799)]->[Parent: 2908 , (2504,589)][Parent: 2908 , (2300,902)][Parent: 2908 , (2205,333)][Parent: 2908 , (580,940)][Parent: 2908 , (2198,893)]
-[Parent: 2908 , (2504,589)]->[Parent: 2504 , (2500,999)][Parent: 2504 , (1762,65)][Parent: 2504 , (1404,371)][Parent: 2504 , (2383,501)]
-[Parent: 2504 , (2500,999)]->[Parent: 2500 , (916,848)][Parent: 2500 , (899,448)]
-[Parent: 2500 , (916,848)]->[Parent: 916 , (776,275)]
-[Parent: 2504 , (1762,65)]->[Parent: 1762 , (140,563)]
-[Parent: 2504 , (2383,501)]->[Parent: 2383 , (2013,967)][Parent: 2383 , (352,906)][Parent: 2383 , (1916,596)]
-[Parent: 2383 , (2013,967)]->[Parent: 2013 , (1574,861)]
-[Parent: 2383 , (1916,596)]->[Parent: 1916 , (1571,110)][Parent: 1916 , (911,208)]
-[Parent: 1916 , (911,208)]->[Parent: 911 , (804,609)]
-[Parent: 2908 , (2300,902)]->[Parent: 2300 , (1249,550)][Parent: 2300 , (1098,613)]
-[Parent: 2300 , (1098,613)]->[Parent: 1098 , (141,323)]
-[Parent: 2908 , (2205,333)]->[Parent: 2205 , (2111,590)]
-[Parent: 2908 , (2198,893)]->[Parent: 2198 , (1528,552)][Parent: 2198 , (912,900)][Parent: 2198 , (1474,132)]
-[Parent: 2198 , (912,900)]->[Parent: 912 , (418,142)]
-[Parent: 2198 , (1474,132)]->[Parent: 1474 , (1404,115)][Parent: 1474 , (959,829)]
-[Parent: 1474 , (1404,115)]->[Parent: 1404 , (115,839)]
-
-Tree 4: [Parent: -1 , (2983,733)]->[Parent: 2983 , (2938,312)][Parent: 2983 , (2835,984)][Parent: 2983 , (2693,61)][Parent: 2983 , (1490,853)][Parent: 2983 , (1046,741)][Parent: 2983 , (490,47)][Parent: 2983 , (2673,750)][Parent: 2983 , (2918,157)]
-[Parent: 2983 , (2938,312)]->[Parent: 2938 , (2927,357)][Parent: 2938 , (2894,91)][Parent: 2938 , (1935,774)][Parent: 2938 , (330,560)][Parent: 2938 , (1727,300)][Parent: 2938 , (2873,715)]
-[Parent: 2938 , (2927,357)]->[Parent: 2927 , (2898,43)][Parent: 2927 , (2336,158)][Parent: 2927 , (1214,70)][Parent: 2927 , (128,409)][Parent: 2927 , (2090,433)]
-[Parent: 2927 , (2898,43)]->[Parent: 2898 , (2782,29)][Parent: 2898 , (396,773)][Parent: 2898 , (2208,736)][Parent: 2898 , (2757,259)]
-[Parent: 2898 , (396,773)]->[Parent: 396 , (369,350)]
-[Parent: 2898 , (2208,736)]->[Parent: 2208 , (1660,119)][Parent: 2208 , (655,305)]
-[Parent: 2208 , (655,305)]->[Parent: 655 , (529,736)]
-[Parent: 2898 , (2757,259)]->[Parent: 2757 , (2401,696)][Parent: 2757 , (1642,615)][Parent: 2757 , (2276,651)]
-[Parent: 2757 , (2401,696)]->[Parent: 2401 , (20,347)]
-[Parent: 2757 , (2276,651)]->[Parent: 2276 , (2173,993)][Parent: 2276 , (1880,957)]
-[Parent: 2276 , (1880,957)]->[Parent: 1880 , (865,101)]
-[Parent: 2927 , (2336,158)]->[Parent: 2336 , (1514,38)][Parent: 2336 , (1196,657)]
-[Parent: 2336 , (1196,657)]->[Parent: 1196 , (614,708)]
-[Parent: 2927 , (128,409)]->[Parent: 128 , (31,87)]
-[Parent: 2927 , (2090,433)]->[Parent: 2090 , (1930,801)][Parent: 2090 , (1421,201)][Parent: 2090 , (431,652)]
-[Parent: 2090 , (1930,801)]->[Parent: 1930 , (1473,498)][Parent: 1930 , (1347,657)]
-[Parent: 1930 , (1473,498)]->[Parent: 1473 , (579,825)]
-[Parent: 2090 , (431,652)]->[Parent: 431 , (280,830)]
-[Parent: 2938 , (2894,91)]->[Parent: 2894 , (2596,618)][Parent: 2894 , (2256,802)][Parent: 2894 , (567,87)]
-[Parent: 2894 , (2596,618)]->[Parent: 2596 , (1645,690)][Parent: 2596 , (923,545)]
-[Parent: 2596 , (923,545)]->[Parent: 923 , (180,426)]
-[Parent: 2894 , (2256,802)]->[Parent: 2256 , (9,696)]
-[Parent: 2938 , (1935,774)]->[Parent: 1935 , (930,787)]
-[Parent: 2938 , (1727,300)]->[Parent: 1727 , (1290,888)][Parent: 1727 , (804,264)]
-[Parent: 1727 , (804,264)]->[Parent: 804 , (581,146)]
-[Parent: 2938 , (2873,715)]->[Parent: 2873 , (2221,801)][Parent: 2873 , (1804,675)][Parent: 2873 , (12,448)][Parent: 2873 , (1800,57)]
-[Parent: 2873 , (2221,801)]->[Parent: 2221 , (2172,197)][Parent: 2221 , (656,152)]
-[Parent: 2221 , (2172,197)]->[Parent: 2172 , (1696,506)]
-[Parent: 2873 , (1804,675)]->[Parent: 1804 , (226,280)]
-[Parent: 2873 , (1800,57)]->[Parent: 1800 , (1776,595)][Parent: 1800 , (376,860)][Parent: 1800 , (1249,854)]
-[Parent: 1800 , (1776,595)]->[Parent: 1776 , (1018,51)]
-[Parent: 1800 , (1249,854)]->[Parent: 1249 , (1105,568)][Parent: 1249 , (109,650)]
-[Parent: 1249 , (1105,568)]->[Parent: 1105 , (493,291)]
-[Parent: 2983 , (2835,984)]->[Parent: 2835 , (2819,503)][Parent: 2835 , (2741,319)][Parent: 2835 , (1355,999)][Parent: 2835 , (2300,920)][Parent: 2835 , (2581,484)]
-[Parent: 2835 , (2819,503)]->[Parent: 2819 , (2762,291)][Parent: 2819 , (2115,880)][Parent: 2819 , (2500,858)][Parent: 2819 , (2577,925)]
-[Parent: 2819 , (2762,291)]->[Parent: 2762 , (2571,730)]
-[Parent: 2819 , (2500,858)]->[Parent: 2500 , (1165,903)][Parent: 2500 , (889,304)]
-[Parent: 2500 , (1165,903)]->[Parent: 1165 , (131,392)]
-[Parent: 2819 , (2577,925)]->[Parent: 2577 , (2251,235)][Parent: 2577 , (1367,432)][Parent: 2577 , (37,978)]
-[Parent: 2577 , (2251,235)]->[Parent: 2251 , (1832,694)][Parent: 2251 , (1164,364)]
-[Parent: 2251 , (1832,694)]->[Parent: 1832 , (1702,177)]
-[Parent: 2577 , (1367,432)]->[Parent: 1367 , (737,557)]
-[Parent: 2835 , (2741,319)]->[Parent: 2741 , (2409,363)]
-[Parent: 2835 , (2300,920)]->[Parent: 2300 , (1536,627)][Parent: 2300 , (745,92)]
-[Parent: 2300 , (1536,627)]->[Parent: 1536 , (149,502)]
-[Parent: 2835 , (2581,484)]->[Parent: 2581 , (2031,456)][Parent: 2581 , (812,555)][Parent: 2581 , (609,542)]
-[Parent: 2581 , (2031,456)]->[Parent: 2031 , (1713,784)][Parent: 2031 , (1148,74)]
-[Parent: 2031 , (1713,784)]->[Parent: 1713 , (1511,343)]
-[Parent: 2581 , (609,542)]->[Parent: 609 , (315,735)]
-[Parent: 2983 , (2693,61)]->[Parent: 2693 , (1875,644)][Parent: 2693 , (1685,301)][Parent: 2693 , (1101,950)]
-[Parent: 2693 , (1875,644)]->[Parent: 1875 , (1783,479)][Parent: 1875 , (593,294)]
-[Parent: 1875 , (1783,479)]->[Parent: 1783 , (1540,71)]
-[Parent: 2693 , (1101,950)]->[Parent: 1101 , (106,523)]
-[Parent: 2983 , (1490,853)]->[Parent: 1490 , (1,543)]
-[Parent: 2983 , (490,47)]->[Parent: 490 , (406,780)][Parent: 490 , (258,9)]
-[Parent: 490 , (406,780)]->[Parent: 406 , (350,386)]
-[Parent: 2983 , (2673,750)]->[Parent: 2673 , (2630,758)][Parent: 2673 , (2538,847)][Parent: 2673 , (2546,488)][Parent: 2673 , (2579,175)]
-[Parent: 2673 , (2538,847)]->[Parent: 2538 , (1859,153)]
-[Parent: 2673 , (2546,488)]->[Parent: 2546 , (2341,940)][Parent: 2546 , (188,522)]
-[Parent: 2546 , (2341,940)]->[Parent: 2341 , (743,848)]
-[Parent: 2673 , (2579,175)]->[Parent: 2579 , (2319,221)][Parent: 2579 , (1859,157)][Parent: 2579 , (370,53)]
-[Parent: 2579 , (2319,221)]->[Parent: 2319 , (2154,134)][Parent: 2319 , (275,948)]
-[Parent: 2319 , (2154,134)]->[Parent: 2154 , (1994,956)]
-[Parent: 2579 , (1859,157)]->[Parent: 1859 , (897,103)]
-[Parent: 2983 , (2918,157)]->[Parent: 2918 , (2916,967)][Parent: 2918 , (2619,467)][Parent: 2918 , (1985,578)][Parent: 2918 , (816,28)][Parent: 2918 , (2316,489)][Parent: 2918 , (2769,171)][Parent: 2918 , (2817,487)]
-[Parent: 2918 , (2916,967)]->[Parent: 2916 , (2716,386)][Parent: 2916 , (1156,819)][Parent: 2916 , (2540,986)][Parent: 2916 , (2185,35)]
-[Parent: 2916 , (1156,819)]->[Parent: 1156 , (203,332)]
-[Parent: 2916 , (2540,986)]->[Parent: 2540 , (1821,896)][Parent: 2540 , (1178,794)]
-[Parent: 2540 , (1821,896)]->[Parent: 1821 , (491,468)]
-[Parent: 2916 , (2185,35)]->[Parent: 2185 , (2126,66)][Parent: 2185 , (1187,488)][Parent: 2185 , (1064,582)]
-[Parent: 2185 , (2126,66)]->[Parent: 2126 , (1349,840)][Parent: 2126 , (1157,175)]
-[Parent: 2126 , (1349,840)]->[Parent: 1349 , (442,192)]
-[Parent: 2185 , (1064,582)]->[Parent: 1064 , (912,58)]
-[Parent: 2918 , (2619,467)]->[Parent: 2619 , (2056,476)][Parent: 2619 , (357,463)]
-[Parent: 2619 , (2056,476)]->[Parent: 2056 , (1497,817)]
-[Parent: 2918 , (1985,578)]->[Parent: 1985 , (1766,680)]
-[Parent: 2918 , (2316,489)]->[Parent: 2316 , (1800,620)][Parent: 2316 , (1088,598)][Parent: 2316 , (40,797)]
-[Parent: 2316 , (1800,620)]->[Parent: 1800 , (1367,72)][Parent: 1800 , (1021,526)]
-[Parent: 1800 , (1367,72)]->[Parent: 1367 , (178,385)]
-[Parent: 2316 , (1088,598)]->[Parent: 1088 , (1027,534)]
-[Parent: 2918 , (2769,171)]->[Parent: 2769 , (2574,387)][Parent: 2769 , (2470,347)][Parent: 2769 , (2379,412)][Parent: 2769 , (2263,608)][Parent: 2769 , (2249,197)]
-[Parent: 2769 , (2574,387)]->[Parent: 2574 , (2572,558)][Parent: 2574 , (1617,49)][Parent: 2574 , (1733,51)][Parent: 2574 , (2057,639)]
-[Parent: 2574 , (2572,558)]->[Parent: 2572 , (229,505)]
-[Parent: 2574 , (1733,51)]->[Parent: 1733 , (1643,609)][Parent: 1733 , (130,514)]
-[Parent: 1733 , (1643,609)]->[Parent: 1643 , (819,820)]
-[Parent: 2574 , (2057,639)]->[Parent: 2057 , (1560,257)][Parent: 2057 , (900,315)][Parent: 2057 , (153,160)]
-[Parent: 2057 , (1560,257)]->[Parent: 1560 , (1456,473)][Parent: 1560 , (946,817)]
-[Parent: 1560 , (946,817)]->[Parent: 946 , (270,417)]
-[Parent: 2057 , (900,315)]->[Parent: 900 , (319,112)]
-[Parent: 2769 , (2470,347)]->[Parent: 2470 , (2124,469)][Parent: 2470 , (1960,736)][Parent: 2470 , (1825,422)]
-[Parent: 2470 , (2124,469)]->[Parent: 2124 , (1748,614)][Parent: 2124 , (1246,487)]
-[Parent: 2124 , (1748,614)]->[Parent: 1748 , (250,357)]
-[Parent: 2470 , (1960,736)]->[Parent: 1960 , (1914,864)]
-[Parent: 2769 , (2379,412)]->[Parent: 2379 , (2362,43)][Parent: 2379 , (2288,76)]
-[Parent: 2379 , (2362,43)]->[Parent: 2362 , (960,400)]
-[Parent: 2769 , (2263,608)]->[Parent: 2263 , (1651,275)]
-[Parent: 2918 , (2817,487)]->[Parent: 2817 , (2808,442)][Parent: 2817 , (2662,588)][Parent: 2817 , (2441,560)][Parent: 2817 , (2753,107)][Parent: 2817 , (2783,667)][Parent: 2817 , (2799,595)]
-[Parent: 2817 , (2662,588)]->[Parent: 2662 , (279,872)]
-[Parent: 2817 , (2441,560)]->[Parent: 2441 , (1773,202)][Parent: 2441 , (1082,387)]
-[Parent: 2441 , (1773,202)]->[Parent: 1773 , (1287,677)]
-[Parent: 2817 , (2753,107)]->[Parent: 2753 , (2717,524)][Parent: 2753 , (2002,146)][Parent: 2753 , (1034,434)]
-[Parent: 2753 , (2717,524)]->[Parent: 2717 , (1390,241)][Parent: 2717 , (884,183)]
-[Parent: 2717 , (1390,241)]->[Parent: 1390 , (305,425)]
-[Parent: 2753 , (2002,146)]->[Parent: 2002 , (163,833)]
-[Parent: 2817 , (2783,667)]->[Parent: 2783 , (2731,900)][Parent: 2783 , (1709,918)][Parent: 2783 , (1457,950)][Parent: 2783 , (162,895)]
-[Parent: 2783 , (2731,900)]->[Parent: 2731 , (2645,942)][Parent: 2731 , (736,705)][Parent: 2731 , (2632,719)]
-[Parent: 2731 , (2645,942)]->[Parent: 2645 , (1425,986)]
-[Parent: 2731 , (2632,719)]->[Parent: 2632 , (1628,725)][Parent: 2632 , (212,470)]
-[Parent: 2632 , (1628,725)]->[Parent: 1628 , (571,108)]
-[Parent: 2783 , (1709,918)]->[Parent: 1709 , (1597,751)][Parent: 1709 , (1279,313)]
-[Parent: 1709 , (1279,313)]->[Parent: 1279 , (1267,191)]
-[Parent: 2783 , (1457,950)]->[Parent: 1457 , (1086,310)]
-[Parent: 2817 , (2799,595)]->[Parent: 2799 , (2313,290)][Parent: 2799 , (2075,706)][Parent: 2799 , (1557,301)][Parent: 2799 , (1459,491)][Parent: 2799 , (185,221)]
-[Parent: 2799 , (2313,290)]->[Parent: 2313 , (2305,827)][Parent: 2313 , (2091,652)][Parent: 2313 , (860,81)][Parent: 2313 , (300,261)]
-[Parent: 2313 , (2305,827)]->[Parent: 2305 , (2141,195)][Parent: 2305 , (1101,41)][Parent: 2305 , (642,622)]
-[Parent: 2305 , (2141,195)]->[Parent: 2141 , (877,488)][Parent: 2141 , (321,789)]
-[Parent: 2141 , (877,488)]->[Parent: 877 , (125,408)]
-[Parent: 2305 , (1101,41)]->[Parent: 1101 , (555,941)]
-[Parent: 2313 , (2091,652)]->[Parent: 2091 , (1716,510)][Parent: 2091 , (1086,908)]
-[Parent: 2091 , (1716,510)]->[Parent: 1716 , (813,564)]
-[Parent: 2313 , (860,81)]->[Parent: 860 , (184,436)]
-[Parent: 2799 , (2075,706)]->[Parent: 2075 , (2024,727)][Parent: 2075 , (504,359)][Parent: 2075 , (1925,510)]
-[Parent: 2075 , (2024,727)]->[Parent: 2024 , (734,399)]
-[Parent: 2075 , (1925,510)]->[Parent: 1925 , (1157,48)][Parent: 1925 , (990,650)]
-[Parent: 1925 , (990,650)]->[Parent: 990 , (745,9)]
-[Parent: 2799 , (1557,301)]->[Parent: 1557 , (1137,679)][Parent: 1557 , (689,776)]
-[Parent: 1557 , (1137,679)]->[Parent: 1137 , (1134,608)]
-[Parent: 2799 , (185,221)]->[Parent: 185 , (55,846)]
-
-
-Inserting: 2871
-Inserting: 2618
-Inserting: 1539
-Inserting: 1693
-Inserting: 1065
-Inserting: 2526
-Inserting: 2509
-Inserting: 1446
-Inserting: 2526
-Inserting: 1181
-Inserting: 925
-Inserting: 383
-Inserting: 2936
-Inserting: 2767
-Inserting: 1868
-Inserting: 1491
-Inserting: 1413
-Inserting: 1735
-Inserting: 2313
-Inserting: 1633
-Inserting: 2546
-Inserting: 341
-Inserting: 1596
-Inserting: 239
-Inserting: 2542
-Inserting: 2404
-Inserting: 2767
-Inserting: 2794
-Inserting: 997
-Inserting: 277
-Inserting: 366
-Inserting: 1950
-Inserting: 1453
-Inserting: 1446
-Inserting: 2854
-Inserting: 2304
-Inserting: 265
-Inserting: 2037
-Inserting: 1150
-Inserting: 2606
-Inserting: 1795
-Inserting: 840
-Inserting: 2690
-Inserting: 2616
-Inserting: 1578
-Inserting: 2219
-Inserting: 2379
-Inserting: 2281
-Inserting: 2383
-Inserting: 2339
-Inserting: 193
-Inserting: 1348
-Inserting: 14
-Inserting: 267
-Inserting: 1088
-Inserting: 1401
-Inserting: 2896
-Inserting: 1394
-Inserting: 580
-Inserting: 1886
-Inserting: 2421
-Inserting: 954
-Inserting: 295
-Inserting: 459
-Inserting: 594
-Inserting: 1419
-Inserting: 2405
-Inserting: 1534
-Inserting: 2027
-Inserting: 1874
-Inserting: 821
-Inserting: 2718
-Inserting: 2014
-Inserting: 2165
-Inserting: 487
-Inserting: 1
-Inserting: 2589
-Inserting: 31
-Inserting: 107
-Inserting: 1261
-Inserting: 1693
-Inserting: 1322
-Inserting: 1624
-Inserting: 2550
-Inserting: 318
-Inserting: 1777
-Inserting: 1147
-Inserting: 1018
-Inserting: 2419
+Inserting: 1188
+Inserting: 1591
+Inserting: 556
+Inserting: 1638
+Inserting: 2212
+Inserting: 282
+Inserting: 982
+Inserting: 1001
+Inserting: 2816
+Inserting: 1323
+Inserting: 946
+Inserting: 1054
+Inserting: 1077
+Inserting: 736
+Inserting: 1338
+Inserting: 2324
+Inserting: 773
+Inserting: 667
+Inserting: 2968
+Inserting: 41
+Inserting: 611
+Inserting: 1965
+Inserting: 2438
+Inserting: 716
+Inserting: 66
 Inserting: 1110
-Inserting: 2737
-Inserting: 825
-Inserting: 925
-Inserting: 2854
-Inserting: 416
-Inserting: 1490
-Inserting: 173
-Inserting: 1101
-Inserting: 368
-Inserting: 2774
-
-
+Inserting: 42
+Inserting: 550
+Inserting: 2361
+Inserting: 203
+Inserting: 168
+Inserting: 776
+Inserting: 835
+Inserting: 1318
+Inserting: 2736
+Inserting: 2588
+Inserting: 3
+Inserting: 2684
+Inserting: 1341
+Inserting: 2449
+Inserting: 1338
+Inserting: 566
+Inserting: 2990
+Inserting: 552
+Inserting: 1649
+Inserting: 1969
+Inserting: 1679
+Inserting: 659
+Inserting: 157
+Inserting: 2834
+Inserting: 90
+Inserting: 646
+Inserting: 1400
+Inserting: 152
+Inserting: 807
+Inserting: 528
+Inserting: 72
+Inserting: 1239
+Inserting: 879
+Inserting: 763
+Inserting: 2885
+Inserting: 2504
+Inserting: 1672
+Inserting: 693
+Inserting: 2718
+Inserting: 1353
+Inserting: 523
+Inserting: 2698
+Inserting: 1575
