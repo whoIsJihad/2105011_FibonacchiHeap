@@ -105,32 +105,15 @@ public:
         two->left = np;
         return H;
     }
-    // prints the value of all child of a particular node
-    void DisplayChild(Node *rr)
-    {
-        Node *p = rr->child;
-        if (p == nullptr)
-            return;
-        do
-        {
-            cout << "[ ";
-            cout << "Parent: " << (rr == nullptr ? -1 : rr->key) << " , ";
-            // Fix: Added parentheses around the ternary operator.
-            cout << "(" << p->key << ", " << p->value << ")";
-            cout << "]";
-            p = p->right;
-            if (p != rr->child)
-            {
-                cout << " , ";
-            }
-        } while (p != rr->child);
-        cout << endl;
-    }
     // prints a single tree as required in the question
 
     void DisplaySingleTree(Node *singleTree)
     {
+        cout << "[Parent: " << (singleTree->parent == nullptr ? -1 : singleTree->parent->key) << " , ";
 
+        cout << "(" << singleTree->key << "," << singleTree->value << ")";
+
+        cout << "]";
         Node *p = singleTree;
         if (p == nullptr)
         {
@@ -138,28 +121,30 @@ public:
         }
 
         Node *ch = p->child;
-
-        cout << "[ ";
-        cout << "Parent: " << (p->parent == nullptr ? -1 : p->parent->key) << " , ";
-        cout << "(" << p->key << ", " << p->value << ")";
-        cout << " ]";
         if (ch != nullptr)
         {
             cout << "->";
-            DisplayChild(ch);
-        }
-        // for each child of p call DisplaySingleTree
 
-        Node *ch1 = ch;
-        // do while loop to traverse through all the children of p by ch1 until all child is traversed
-        if (ch1 != nullptr)
-        {
+            queue<Node *> q;
+            Node *temp = ch;
             do
             {
-                DisplaySingleTree(ch1);
-                cout << " , ";
-                ch1 = ch1->right;
-            } while (ch1 != ch);
+                cout << "[";
+                cout << "Parent: " << (temp->parent == nullptr ? -1 : temp->parent->key) << " , ";
+                cout << "(" << temp->key << "," << temp->value << ")";
+                cout << "]";
+                q.push(temp);
+                temp = temp->right;
+            } while (temp != ch);
+            cout << endl;
+            while (!q.empty())
+            {
+                if (q.front()->child != nullptr)
+                {
+                    DisplaySingleTree(q.front());
+                }
+                q.pop();
+            }
         }
     }
     // prints the entire heap tree by tree as required in the question
@@ -446,53 +431,117 @@ public:
     }
 };
 
+//***************
+class OfflineFunction
+{
+public:
+    FibonacciHeap make_heap()
+    {
+        FibonacciHeap fh;
+        return fh;
+    }
 
+    bool is_empty(FibonacciHeap fh)
+    {
+        return fh.getNodeNum() == 0;
+    }
 
-int main() {
-    FibonacciHeap fh;
+    void insert(FibonacciHeap &fh, int key, int value)
+    {
+        fh.insert(key, value);
+    }
 
-    freopen("output.txt", "w", stdout);
-    // Generate 20 random numbers and insert them into the Fibonacci Heap
-    srand(time(NULL));
-    for (int i = 0; i < 20; ++i) {
-        int key = rand() % 100; // Generating random numbers between 0 and 99
-        fh.insert(key, i); // Value is set as i for simplicity
-        if ((i + 1) % 5 == 0) {
-            Node *maxNode = fh.extractMax();
-            fh.DisplayHeap();
-            if (maxNode != nullptr) {
-                cout << "Extracted max after " << (i + 1) << " insertions: " << maxNode->key << std::endl;
-                delete maxNode; // Free memory allocated for the extracted node
-            } else {
-                cout << "Fibonacci Heap is empty.\n";
-            }
+    int extract_max(FibonacciHeap &fh)
+    {
+        Node *maxNode = fh.extractMax();
+        if (maxNode != nullptr)
+        {
+            return maxNode->key;
+        }
+        else
+        {
+            return -1;
         }
     }
 
-    // Insert 5 more numbers
-    for (int i = 0; i < 5; ++i) {
-        int key = rand() % 100;
-        fh.insert(key, i);
+    // returns whether the increase key operation was successful or not
+
+    bool increase_key(FibonacciHeap &fh, int index, int newKey)
+    {
+        return fh.Increase_key(index, newKey);
     }
 
-    // Call Increase_key for some node
-    int increaseKeyIndex = rand() % 20; // Randomly selecting a node to increase its key
-    int newKey = 150; // New key to increase
-    bool increaseSuccess = fh.Increase_key(increaseKeyIndex, newKey);
-    if (increaseSuccess) {
-        cout << "Key increased successfully.\n";
-    } else {
-        cout << "Failed to increase key.\n";
+    void Delete_(FibonacciHeap &fh, int value)
+    {
+        fh.Delete(value);
     }
 
-    // Show the use of the find operation
-    int findKey = 50; // Key to find
-    Node *foundNode = fh.Find(findKey);
-    if (foundNode != nullptr) {
-        cout << "Node found with key " << findKey << " and value " << foundNode->value << endl;
-    } else {
-        cout << "Node with key " << findKey << " not found.\n";
+    FibonacciHeap meld(FibonacciHeap &fh1, FibonacciHeap &fh2)
+    {
+        FibonacciHeap fh;
+        fh.rootList = fh.Union(fh1.rootList, fh2.rootList);
+        return fh;
     }
 
-    return 0;
+    int find_max(FibonacciHeap &fh)
+    {
+        if (fh.rootList == nullptr)
+        {
+            return -1;
+        }
+        return fh.rootList->key;
+    }
+
+    void print(FibonacciHeap &fh)
+    {        
+        fh.DisplayHeap();
+    }
+
+    void test()
+    {
+        FibonacciHeap fh = make_heap();
+        cout << (is_empty(fh) ? "Empty" : "Not Empty") << endl;
+
+        // inserting thousand random values from 0 to 2999
+
+        for (int i = 0; i < 1000; i++)
+        {
+            insert(fh, rand() % 2999, rand());
+
+            // extracted max after every 100 insertions
+            if (i && i % 100 == 0)
+            {
+
+                int extractedMax = extract_max(fh);
+                cout << "Extracted Max: " << extractedMax << endl;
+                this->print(fh);
+            }
+        }
+
+        //attempting to delete hundred random values from 0 to 2999
+        for(int i=0;i<100;i++){
+            Delete_(fh,rand()%2999);
+            cout << "After deleting: " << endl;
+            this->print(fh);
+        }
+
+        // increasing the key of 100 random values from 0 to 2999
+        for(int i=0;i<100;i++){
+            increase_key(fh,rand()%2999,rand());
+            cout << "After increasing key: " << endl;
+            this->print(fh);
+            
+        }
+    }
+};
+
+// Main function to test the implementation
+
+int main()
+{
+    freopen("output.txt", "w", stdout);
+    OfflineFunction of;
+    srand(time(nullptr));
+    FibonacciHeap fh;
+    of.test();
 }
