@@ -387,7 +387,6 @@ public:
                     {
                         A[i]->left = rootList->left;
                         rootList->left->right = A[i];
-                        A[i]->right = rootList;
                         rootList->left = A[i];
                         // updating the root list if necessary
 

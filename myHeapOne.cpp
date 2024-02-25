@@ -506,7 +506,9 @@ public:
 
         for (int i = 0; i < 1000; i++)
         {
-            insert(fh, rand() % 2999, rand());
+            int value = rand() % 2999;
+            cout<<"Inserting: "<<value<<endl;
+            insert(fh,value,rand() % 1000);
 
             // extracted max after every 100 insertions
             if (i && i % 100 == 0)
@@ -520,6 +522,7 @@ public:
 
         //attempting to delete hundred random values from 0 to 2999
         for(int i=0;i<100;i++){
+            
             Delete_(fh,rand()%2999);
             cout << "After deleting: " << endl;
             this->print(fh);
@@ -530,7 +533,7 @@ public:
             increase_key(fh,rand()%2999,rand());
             cout << "After increasing key: " << endl;
             this->print(fh);
-            
+
         }
     }
 };
